@@ -1,0 +1,11 @@
+#common
+.DS_Store
+Thumbs.db
+nbproject
+.idea
+*~
+*.local
+*.bak
+
+#project specific
+/hosts

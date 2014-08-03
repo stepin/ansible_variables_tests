@@ -1,0 +1,29 @@
+---
+- name: Super role task
+  command: echo  1
+
+- name: "Super: Role defaults var {{role_defaults_var}}"
+  command: echo {{role_defaults_var}}
+
+# Error here, ignore errors does not help
+#- name: "Super: Var from role incluzzzion {{role_inc_var}}"
+#  command: echo {{role_inc_var}}
+#  ignore_errors: true
+
+- name: "Super: Var from super role {{role_super_var}} defaults"
+  command: echo {{role_super_var}}
+
+- name: "Super: Var from playbook {{role_playbook_var}}"
+  command: echo {{role_playbook_var}}
+
+- name: "Super: Var from role_super_and_inc_var {{role_super_and_inc_var}}"
+  command: echo {{role_super_and_inc_var}}
+
+- name: "Super: Var from role_super_and_sub_var {{role_super_and_sub_var}}"
+  command: echo {{role_super_and_sub_var}}
+
+- name: "Super: Var from prev_role_over {{prev_role_over}}"
+  command: echo {{prev_role_over}}
+
+- name: "Super: Var from prev_role {{prev_role}}"
+  command: echo {{prev_role}}

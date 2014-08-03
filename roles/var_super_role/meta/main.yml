@@ -1,0 +1,7 @@
+---
+dependencies:
+  - { role: var_scope,
+        role_inc_var: 1,
+        local_super_var2: "{{super_var2}}",
+        role_super_and_inc_var: 2
+    }

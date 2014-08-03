@@ -1,0 +1,4 @@
+---
+role_defaults_var: 1
+role_super_and_sub_var: 2
+local_super_var2: 1

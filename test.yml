@@ -1,0 +1,10 @@
+---
+- hosts: all
+  remote_user: root
+  gather_facts: false
+  vars_files:
+    - vars/defaults.yml
+
+  roles:
+    - var_prev_role
+    - var_super_role
